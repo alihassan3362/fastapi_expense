@@ -21,7 +21,7 @@ def get_db():
 def List(db:Session  = Depends(get_db)):
     cate=db.query(models.category).all()
     return cate
-
+print("ali ali")
 
 
 @app.post("/categories/", tags=["Categories"])
